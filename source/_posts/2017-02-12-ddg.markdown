@@ -1,0 +1,21 @@
+---
+layout: post
+title: "대구 개발자 모임-하둡"
+date: 2017-02-12 16:43:48 +0900
+comments: true
+categories: 
+---
+
+## 모임
+* 장소 : 아이원 유학스터디룸
+* 일자 : 2017년 2월 11
+* slack : https://daegugroup.slack.com/
+
+
+## 느낌
+* 고향 근처에서 개발에 관심있으신 분들과 만날 수 있어 기쁘다.
+* 하둡 분야의 전무가가 없었지만, 함께 고민하고 답을 찾는 과정들이 의미있게 느껴졌다.
+* 옆에 계셨던 분이 아래 책의 저자라는 사실을 집에 오며 알게 되었다.
+
+쉽고 빠르게 배우는 Angular 2 프로그래밍 http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791158390525
+
