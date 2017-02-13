@@ -17,3 +17,4 @@ end
 
 gem 'sinatra', '~> 1.4.2'
 gem 'pygments.rb'
+gem 'octopress-codeblock'

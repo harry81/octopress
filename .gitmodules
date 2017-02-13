@@ -1,3 +1,15 @@
 [submodule ".themes/murky-mussels"]
 	path = .themes/murky-mussels
 	url = git://github.com/octothemes/murky-mussels.git
+[submodule ".themes/cleanerpress"]
+	path = .themes/cleanerpress
+	url = https://github.com/pera/cleanerpress
+[submodule ".themes/jin"]
+	path = .themes/jin
+	url = https://github.com/lijinma/jin
+[submodule ".themes/greenpress"]
+	path = .themes/greenpress
+	url = https://github.com/takady/greenpress/
+[submodule ".themes/hpstr"]
+	path = .themes/hpstr
+	url = https://github.com/jez/hpstr-theme.git
