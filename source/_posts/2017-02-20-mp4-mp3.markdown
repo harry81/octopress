@@ -1,0 +1,18 @@
+---
+layout: post
+title: "mp4-mp3"
+date: 2015-06-28 17:51:24 +0900
+comments: true
+categories: mp3 mp5 convert
+---
+
+### 우분투용용의 avconv 이용
+
+
+``` bash 형식
+avconv  -i [영상파일] -vn  [소리파일]
+```
+
+``` bash 예시
+avconv  -i Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp4 -vn Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp3
+```

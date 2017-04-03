@@ -1,0 +1,74 @@
+---
+layout: post
+title: "spark docker 설치해보기"
+date: 2017-02-28 18:34:41 +0900
+comments: true
+categories: 
+---
+
+
+
+[Apache Spark is an open-source cluster-computing framework][Apache Spark is an open-source cluster-computing framework]
+
+https://github.com/sequenceiq/docker-spark
+
+[Apache Spark is an open-source cluster-computing framework]: https://en.wikipedia.org/wiki/Apache_Spark
+
+
+### create virtualbox ###
+```
+docker-machine create -d virtualbox spark
+docker-machine create -d virtualbox namenode
+docker-machine create -d virtualbox datanode1
+```
+
+## name node ##
+https://github.com/sequenceiq/hadoop-docker
+
+```
+# run docker hadoop
+docker-machine start namenode; eval "$(docker-machine env namenode)";
+
+# 이미지 다운로드
+docker pull sequenceiq/hadoop-docker:2.7.1
+
+# 실행
+docker run -it -p 50070:50070 -p 8088:8088 sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
+```
+
+## data node ##
+
+```
+# run docker hadoop
+docker-machine start datanode1; eval "$(docker-machine env datanode1)";
+
+# 이미지 다운로드
+docker pull sequenceiq/hadoop-docker:2.7.1
+
+# 실행
+docker run -it -p 50070:50070 -p 8088:8088 sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
+```
+
+
+## spark ##
+https://github.com/sequenceiq/docker-spark
+
+```
+# run docker spark
+docker-machine start spark; eval "$(docker-machine env spark)";
+
+#  bash
+docker run -it -p 8088:8088 -p 8042:8042 -p 4040:4040 -h sandbox sequenceiq/spark:1.6.0 bash
+```
+
+
+
+|         port | components              |
+| ------------ | -----------             |
+|        50070 | HDFS NameNode           |
+|        50050 | HDFS DataNode           |
+|        50090 | HDFS Secondary NameNode |
+|         8088 | YARN Resource Manager   |
+|         4042 | YARN Node Manager       |
+|         4040 |                         |
+
