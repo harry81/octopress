@@ -18,3 +18,5 @@ end
 gem 'sinatra', '~> 1.4.2'
 gem 'pygments.rb'
 gem 'octopress-codeblock'
+gem 'redcarpet', '~> 3.3.2'
+gem 'albino', '~> 1.3.3'
